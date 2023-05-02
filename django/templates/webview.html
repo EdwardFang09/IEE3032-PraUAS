@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>Pabrik 'Pra UAS'</title>
+    <meta http-equiv="refresh" content="2">
+  </head>
+  <body>
+    <h1>Pabrik 'Pra UAS'</h1>  
+    <p>Edward - 202000541 - IEE</p> 
+    <!-- {{views}} -->
+    <table border='1'>
+      <tr>
+        <th colspan=12>Sensors</th>
+      </tr>
+      <tr>
+        <th colspan = 4>Sistem 1: Smart Farm</th>
+        <th colspan = 4>Sistem 2: Smart Plantation</th>
+        <th colspan = 4>Sistem 3: Smart Restaurant</th>
+      </tr>
+      <tr>
+        <th>Gas (%)</th>
+        <th>Suhu (C)</th>
+        <th>pH</th>
+        <th>Aktuator (Prediksi)</th>
+        <th>Volume (L)</th>
+        <th>Berat (kg)</th>
+        <th>Kelembaban (%)</th>
+        <th>Aktuator (Prediksi)</th>
+        <th>Musim</th>
+        <th>Sales (IDR)</th>
+        <th>Pengunjung</th>
+        <th>Aktuator (Prediksi)</th>
+      </tr>
+      <tr>
+        {%for views in views%}
+        {%if views.name == 'temp1' %}
+        <td align="center">{{views.value}}</td>
+        {%elif views.name == 'temp2' %}
+        <td align="center">{{views.value}}</td>
+        {%elif views.name == 'temp3' %}
+        <td align="center">{{views.value}}</td>
+        {%elif views.name == 'aktuator_ml1' %}
+        <td align="center">{{views.value}}</td>
+
+        {%elif views.name == 'frik1' %}
+        <td align="center">{{views.value}}</td>
+        {%elif views.name == 'frik2' %}
+        <td align="center">{{views.value}}</td>
+        {%elif views.name == 'frik3' %}
+        <td align="center">{{views.value}}</td>
+        {%elif views.name == 'aktuator_ml2' %}
+        <td align="center">{{views.value}}</td>
+
+        {%elif views.name == 'dl1' %}
+        <td align="center">{{views.value}}</td>
+        {%elif views.name == 'dl2' %}
+        <td align="center">{{views.value}}</td>
+        {%elif views.name == 'dl3' %}
+        <td align="center">{{views.value}}</td>
+        {%elif views.name == 'aktuator_ml3' %}
+        <td align="center">{{views.value}}</td>
+
+        {% endif %}
+        {% endfor %}
+      </tr>
+    </table>
