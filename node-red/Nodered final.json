@@ -1,0 +1,3570 @@
+[
+    {
+        "id": "2cfa32f2d11b78fe",
+        "type": "tab",
+        "label": "Pabrik 'Pra UAS 1'",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "727660ac399984c1",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "310b4eda0426e1b8",
+        "type": "ui_tab",
+        "name": "Pabrik 'Pra UAS'",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d370094a545022f4",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "7e73e73e8d6c84c5",
+        "type": "ui_group",
+        "name": "Subsistem 3: Daging Putih (0 - 50 kg (Protein))",
+        "tab": "310b4eda0426e1b8",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a5fa86670b910c43",
+        "type": "ui_group",
+        "name": "Subsistem 6: Buah-buahan (0 - 20000 mg (Vit C))",
+        "tab": "310b4eda0426e1b8",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e84211c10641977c",
+        "type": "ui_group",
+        "name": "Subsistem 7: Deteksi musim (Variabel musim, 1 - 4)",
+        "tab": "310b4eda0426e1b8",
+        "order": 7,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "859e9c56a728cf6a",
+        "type": "ui_group",
+        "name": "Aktuator",
+        "tab": "310b4eda0426e1b8",
+        "order": 10,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0adf11f1e2b12a9f",
+        "type": "ui_group",
+        "name": "Subsistem 1: Susu Hewani dan Telur (0 - 96000 g, kalsium)",
+        "tab": "310b4eda0426e1b8",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "630c7c7b639b2895",
+        "type": "ui_group",
+        "name": "Subsistem 2: Daging Merah (0 - 250000 kcal)",
+        "tab": "310b4eda0426e1b8",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0fc5044f8b677e2b",
+        "type": "ui_group",
+        "name": "Subsistem 4: Sumber karbohidrat (0 - 100000, g (karbohidrat))",
+        "tab": "310b4eda0426e1b8",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6fc054b6f8394d2c",
+        "type": "ui_group",
+        "name": "Subsistem 5: Sayuran (0 - 50000 g, (zat besi))",
+        "tab": "310b4eda0426e1b8",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f905900e9d0853e9",
+        "type": "ui_group",
+        "name": "Subsistem 8: Hasil penjualan (Sales, IDR 0 - 1000000000)",
+        "tab": "310b4eda0426e1b8",
+        "order": 8,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f64300a8f077d042",
+        "type": "ui_group",
+        "name": "Subsistem 9: Jumlah Pengunjung (jumlah orang, 0 - 200)",
+        "tab": "310b4eda0426e1b8",
+        "order": 9,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b19d0f78db272798",
+        "type": "inject",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 480,
+        "wires": [
+            [
+                "af3a4c8f73223711",
+                "4330e971b6fe901b",
+                "d2df38576f7307c8",
+                "f1cdc09fe6485db0",
+                "6e2edd0d23bbc82c",
+                "313c4c632c7796c8",
+                "6d35eabe51bf722a",
+                "44e23d1b67911675",
+                "e903a309cd5f0a85",
+                "9bb3321b5cae995d"
+            ]
+        ]
+    },
+    {
+        "id": "3a7df85e34e52345",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/temp1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1200,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "af3a4c8f73223711",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Subsistem 1: Susu Hewani dan Telur (0 - 96000 g, kalsium)",
+        "low": "0",
+        "high": "96000",
+        "inte": "true",
+        "property": "payload",
+        "x": 500,
+        "y": 140,
+        "wires": [
+            [
+                "90dbb22aab92f0e2",
+                "6f12d46723d897e6",
+                "f4e09c7c2988071a",
+                "65129ff37f1d0904"
+            ]
+        ]
+    },
+    {
+        "id": "43a4c1d11aeca98a",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/temp1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1440,
+        "y": 100,
+        "wires": [
+            [
+                "8f53c38f0fb3ca25",
+                "0757de09adbde2ec"
+            ]
+        ]
+    },
+    {
+        "id": "8f53c38f0fb3ca25",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "d2df38576f7307c8",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Subsistem 4: Sumber karbohidrat (0 - 100000, g (karbohidrat))",
+        "low": "0",
+        "high": "100000",
+        "inte": "true",
+        "property": "payload",
+        "x": 510,
+        "y": 680,
+        "wires": [
+            [
+                "bfc3232f0f4c9210",
+                "93d63b9bb2a6113f",
+                "e837545e24c2c7e6",
+                "ef32109c8254edea"
+            ]
+        ]
+    },
+    {
+        "id": "4330e971b6fe901b",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Subsistem 9: Jumlah Pengunjung (jumlah orang, 0 - 200)",
+        "low": "0",
+        "high": "200",
+        "inte": "true",
+        "property": "payload",
+        "x": 510,
+        "y": 1640,
+        "wires": [
+            [
+                "da35fada6d401ac1",
+                "36012f01af54f407",
+                "7b2c53510e650a1b",
+                "105e1dd85a1f6127"
+            ]
+        ]
+    },
+    {
+        "id": "5c286216dd0e5ae4",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/frik1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1200,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "818064a0ed41d15d",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/dl3",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1190,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "392afb7bb4b4c846",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/frik1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1430,
+        "y": 640,
+        "wires": [
+            [
+                "278292865304511e",
+                "dc901fe924c62869"
+            ]
+        ]
+    },
+    {
+        "id": "21c9858d6b5230bf",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/dl1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1430,
+        "y": 1160,
+        "wires": [
+            [
+                "728535ca9c7e288b",
+                "f1f0fbeabda90df5"
+            ]
+        ]
+    },
+    {
+        "id": "278292865304511e",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "728535ca9c7e288b",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "4bf61215138b5330",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/temp2",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1200,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "f1cdc09fe6485db0",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Subsistem 2: Daging Merah (0 - 250000 kcal)",
+        "low": "0",
+        "high": "250000",
+        "inte": "true",
+        "property": "payload",
+        "x": 450,
+        "y": 300,
+        "wires": [
+            [
+                "0d3d65e0f375c7f9",
+                "74f3f73164201363",
+                "a1010373eeabe734",
+                "5691acd1dd2bfa2e"
+            ]
+        ]
+    },
+    {
+        "id": "f589316a45f140d0",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/temp3",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1200,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "6e2edd0d23bbc82c",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Subsistem 3: Daging Putih (0 - 50 kg (Protein))",
+        "low": "0",
+        "high": "50",
+        "inte": "true",
+        "property": "payload",
+        "x": 460,
+        "y": 480,
+        "wires": [
+            [
+                "9460369a5b22e9e9",
+                "37e7e921f1579457",
+                "8394bc984bcfde1e",
+                "12d431edbab777c6"
+            ]
+        ]
+    },
+    {
+        "id": "313c4c632c7796c8",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Subsistem 5: Sayuran (0 - 50000 g, (zat besi))",
+        "low": "0",
+        "high": "50000",
+        "inte": "true",
+        "property": "payload",
+        "x": 460,
+        "y": 820,
+        "wires": [
+            [
+                "a19f82e92e82eed4",
+                "9dcdcf0d23c7744b",
+                "f9b6f3817c670da0",
+                "436341caf2865128"
+            ]
+        ]
+    },
+    {
+        "id": "3c2438be5b24d360",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/frik2",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1200,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "6d35eabe51bf722a",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Subsistem 6: Buah-buahan (0 - 20000 mg (Vit C))",
+        "low": "0",
+        "high": "20000",
+        "inte": "true",
+        "property": "payload",
+        "x": 470,
+        "y": 980,
+        "wires": [
+            [
+                "fb616132beb8f2c0",
+                "8fdbbdcf10104b48",
+                "2b8db367816edb36",
+                "e79887e15660f8a2"
+            ]
+        ]
+    },
+    {
+        "id": "876db47259699297",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/frik3",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1200,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "e903a309cd5f0a85",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Subsistem 8: Hasil penjualan (Sales, IDR 0 - 1000000000)",
+        "low": "0",
+        "high": "1000000000",
+        "inte": "true",
+        "property": "payload",
+        "x": 510,
+        "y": 1420,
+        "wires": [
+            [
+                "f54e7526db62a7d5",
+                "b4f77cdd22fe1196",
+                "7dafc6713e6c95ee",
+                "07b7364221b4ed1d"
+            ]
+        ]
+    },
+    {
+        "id": "8363a45680c62edd",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/dl2",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1190,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "44e23d1b67911675",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Subsistem 7: Deteksi musim (Variabel musim, 1 - 4)",
+        "low": "1",
+        "high": "4",
+        "inte": "true",
+        "property": "payload",
+        "x": 490,
+        "y": 1220,
+        "wires": [
+            [
+                "81c329ef81413543",
+                "6abace91f55e279b",
+                "781d26303804106d",
+                "424c09e8a2bfbc30"
+            ]
+        ]
+    },
+    {
+        "id": "2f89ef8c839e125f",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/dl1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1190,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "2bd0c73fc6744a3e",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/temp2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1440,
+        "y": 140,
+        "wires": [
+            [
+                "984cdae13e825c4f",
+                "030b8b49bd9b10f5"
+            ]
+        ]
+    },
+    {
+        "id": "984cdae13e825c4f",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "0b220babde0cc181",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/temp3",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1440,
+        "y": 180,
+        "wires": [
+            [
+                "20b9dba3ce92ac57",
+                "0ff19a81b9315c5e"
+            ]
+        ]
+    },
+    {
+        "id": "20b9dba3ce92ac57",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "e0dd4b414ca14060",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/frik2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1430,
+        "y": 680,
+        "wires": [
+            [
+                "c466219dc7f55589",
+                "da19fdd8e0bcaf37"
+            ]
+        ]
+    },
+    {
+        "id": "c466219dc7f55589",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "e07dcfdc8066814d",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/frik3",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1430,
+        "y": 720,
+        "wires": [
+            [
+                "185f5db1e7f5a825",
+                "c7954c3f3ec0462d"
+            ]
+        ]
+    },
+    {
+        "id": "185f5db1e7f5a825",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "34246c665b2b4121",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/dl2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1430,
+        "y": 1200,
+        "wires": [
+            [
+                "e406582aca6628bb",
+                "36e5e776469a8b71"
+            ]
+        ]
+    },
+    {
+        "id": "e406582aca6628bb",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "dca2a0920b70cf22",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/dl3",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1430,
+        "y": 1240,
+        "wires": [
+            [
+                "9549298116ae27c7",
+                "d3cb3a128acc0554"
+            ]
+        ]
+    },
+    {
+        "id": "9549298116ae27c7",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "e6bb32522e480ad7",
+        "type": "comment",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sistem 2: Smart Plantation",
+        "info": "",
+        "x": 390,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "2809cce71ad8cae7",
+        "type": "comment",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sistem 1: Smart Farm",
+        "info": "",
+        "x": 380,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "d79546585eb5713a",
+        "type": "comment",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sistem 3: Smart Restaurant",
+        "info": "",
+        "x": 420,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "2ff5712688c2d178",
+        "type": "comment",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Pabrik 'Pra UAS'",
+        "info": "",
+        "x": 500,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "0757de09adbde2ec",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "0adf11f1e2b12a9f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor 1: Sensor proksimitas (m, 0 - 10)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "10",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1700,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "030b8b49bd9b10f5",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "0adf11f1e2b12a9f",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor  2: Sensor cahaya UV (lux, 0 - 1000)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "1000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1710,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "0ff19a81b9315c5e",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "0adf11f1e2b12a9f",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor 3: Sensor berat (kg, 0 - 1000)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1690,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "dc901fe924c62869",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "0fc5044f8b677e2b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor 4: Ultrasonic sensor (cm, 0 - 180)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "180",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1680,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "da19fdd8e0bcaf37",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "0fc5044f8b677e2b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor 5: Gas sensor (%, 0 - 100)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1680,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "c7954c3f3ec0462d",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "0fc5044f8b677e2b",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor 6:pH sensor (1 - 14)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "1",
+        "max": "14",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1640,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "f1f0fbeabda90df5",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "e84211c10641977c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor 7: Sensor CO2(0 - 5000, ppm)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "5000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1670,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "36e5e776469a8b71",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "f905900e9d0853e9",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor 8:Sensor cahaya (0 - 1023, (LDR))",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "1023",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1680,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "d3cb3a128acc0554",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "f905900e9d0853e9",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor 9: Sensor kualitas udara(0 - 10000, ppm)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "10000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1700,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "6f12d46723d897e6",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sensor Flex (derajat, 0 - 180)",
+        "low": "0",
+        "high": "180",
+        "inte": "true",
+        "property": "payload",
+        "x": 900,
+        "y": 140,
+        "wires": [
+            [
+                "4bf61215138b5330"
+            ]
+        ]
+    },
+    {
+        "id": "f4e09c7c2988071a",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sensor berat (kg, 0 - 1000)",
+        "low": "0",
+        "high": "1000",
+        "inte": "true",
+        "property": "payload",
+        "x": 900,
+        "y": 180,
+        "wires": [
+            [
+                "f589316a45f140d0"
+            ]
+        ]
+    },
+    {
+        "id": "0d3d65e0f375c7f9",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sensor suhu (C, 0 - 100)",
+        "low": "0",
+        "high": "100",
+        "inte": "true",
+        "property": "payload",
+        "x": 890,
+        "y": 280,
+        "wires": [
+            [
+                "ec25e8742f30afca"
+            ]
+        ]
+    },
+    {
+        "id": "74f3f73164201363",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sensor Tegangan (80-260, VAC)",
+        "low": "80",
+        "high": "260",
+        "inte": "true",
+        "property": "payload",
+        "x": 910,
+        "y": 320,
+        "wires": [
+            [
+                "6cb0b7765ac5b317"
+            ]
+        ]
+    },
+    {
+        "id": "a1010373eeabe734",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sensor Arus (0 - 5, A)",
+        "low": "0",
+        "high": "5",
+        "inte": "true",
+        "property": "payload",
+        "x": 880,
+        "y": 360,
+        "wires": [
+            [
+                "ac2f164c0563460c"
+            ]
+        ]
+    },
+    {
+        "id": "9460369a5b22e9e9",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Pressure sensor (P, 1000 - 100000)",
+        "low": "1000",
+        "high": "100000",
+        "inte": "true",
+        "property": "payload",
+        "x": 920,
+        "y": 440,
+        "wires": [
+            [
+                "3763770bbb43521d"
+            ]
+        ]
+    },
+    {
+        "id": "37e7e921f1579457",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Magnetik sensor (mT, 0.005 - 1)",
+        "low": "5",
+        "high": "200",
+        "inte": "true",
+        "property": "payload",
+        "x": 910,
+        "y": 480,
+        "wires": [
+            [
+                "16945b5e7127e2fa"
+            ]
+        ]
+    },
+    {
+        "id": "8394bc984bcfde1e",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Infrared sensor (W/m2, 0 - 1500)",
+        "low": "0",
+        "high": "1500",
+        "inte": "true",
+        "property": "payload",
+        "x": 910,
+        "y": 520,
+        "wires": [
+            [
+                "68e16dc1f0ef5664"
+            ]
+        ]
+    },
+    {
+        "id": "bfc3232f0f4c9210",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Ultrasonic sensor (cm, 0 - 180)",
+        "low": "0",
+        "high": "180",
+        "inte": "true",
+        "property": "payload",
+        "x": 930,
+        "y": 640,
+        "wires": [
+            [
+                "5c286216dd0e5ae4"
+            ]
+        ]
+    },
+    {
+        "id": "93d63b9bb2a6113f",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Gas sensor (%, 0 - 100)",
+        "low": "0",
+        "high": "100",
+        "inte": "true",
+        "property": "payload",
+        "x": 910,
+        "y": 680,
+        "wires": [
+            [
+                "3c2438be5b24d360"
+            ]
+        ]
+    },
+    {
+        "id": "e837545e24c2c7e6",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "pH sensor (1 - 14)",
+        "low": "1",
+        "high": "14",
+        "inte": "true",
+        "property": "payload",
+        "x": 890,
+        "y": 720,
+        "wires": [
+            [
+                "876db47259699297"
+            ]
+        ]
+    },
+    {
+        "id": "a19f82e92e82eed4",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Motion sensor (0 - 1)",
+        "low": "0",
+        "high": "1",
+        "inte": "true",
+        "property": "payload",
+        "x": 840,
+        "y": 780,
+        "wires": [
+            [
+                "c33e66aa771b1bcb"
+            ]
+        ]
+    },
+    {
+        "id": "9dcdcf0d23c7744b",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Tilt sensor (0 - 360, derajat)",
+        "low": "5",
+        "high": "200",
+        "inte": "true",
+        "property": "payload",
+        "x": 860,
+        "y": 820,
+        "wires": [
+            [
+                "5425714775b875f7"
+            ]
+        ]
+    },
+    {
+        "id": "f9b6f3817c670da0",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sensor gaya (0, 10000, N)",
+        "low": "5",
+        "high": "200",
+        "inte": "true",
+        "property": "payload",
+        "x": 860,
+        "y": 860,
+        "wires": [
+            [
+                "85c4ba2154a2c196"
+            ]
+        ]
+    },
+    {
+        "id": "fb616132beb8f2c0",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sensor aliran(20 - 30, ft/s)",
+        "low": "20",
+        "high": "30",
+        "inte": "true",
+        "property": "payload",
+        "x": 850,
+        "y": 940,
+        "wires": [
+            [
+                "dc1e61188ed2feac"
+            ]
+        ]
+    },
+    {
+        "id": "07b7364221b4ed1d",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sensor kelembaban(0 - 100, %)",
+        "low": "0",
+        "high": "100",
+        "inte": "true",
+        "property": "payload",
+        "x": 950,
+        "y": 1420,
+        "wires": [
+            [
+                "923a1ff3b5c0ddd9"
+            ]
+        ]
+    },
+    {
+        "id": "781d26303804106d",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sensor kualitas udara(0 - 10000, ppm)",
+        "low": "0",
+        "high": "10000",
+        "inte": "true",
+        "property": "payload",
+        "x": 970,
+        "y": 1240,
+        "wires": [
+            [
+                "818064a0ed41d15d"
+            ]
+        ]
+    },
+    {
+        "id": "81c329ef81413543",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sensor CO2(0 - 5000, ppm)",
+        "low": "0",
+        "high": "5000",
+        "inte": "true",
+        "property": "payload",
+        "x": 940,
+        "y": 1160,
+        "wires": [
+            [
+                "2f89ef8c839e125f"
+            ]
+        ]
+    },
+    {
+        "id": "6abace91f55e279b",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sensor cahaya (0 - 1023, (LDR))",
+        "low": "0",
+        "high": "1023",
+        "inte": "true",
+        "property": "payload",
+        "x": 950,
+        "y": 1200,
+        "wires": [
+            [
+                "8363a45680c62edd"
+            ]
+        ]
+    },
+    {
+        "id": "8fdbbdcf10104b48",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sensor warna(0 - 255, (kecerahan array))",
+        "low": "0",
+        "high": "255",
+        "inte": "true",
+        "property": "payload",
+        "x": 900,
+        "y": 1020,
+        "wires": [
+            [
+                "000e0cf5970d2df0"
+            ]
+        ]
+    },
+    {
+        "id": "e79887e15660f8a2",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sensor vibrasi (0 - 100, a/s)",
+        "low": "0",
+        "high": "100",
+        "inte": "true",
+        "property": "payload",
+        "x": 860,
+        "y": 980,
+        "wires": [
+            [
+                "51b74e379bb52b08"
+            ]
+        ]
+    },
+    {
+        "id": "b4f77cdd22fe1196",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sensor kecepatan angin(0 - 60, m/s)",
+        "low": "1",
+        "high": "4",
+        "inte": "true",
+        "property": "payload",
+        "x": 970,
+        "y": 1460,
+        "wires": [
+            [
+                "7ab47b8cabcf9922"
+            ]
+        ]
+    },
+    {
+        "id": "da35fada6d401ac1",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sensor radiasi (100 - 1000, gray)",
+        "low": "100",
+        "high": "1000",
+        "inte": "true",
+        "property": "payload",
+        "x": 960,
+        "y": 1600,
+        "wires": [
+            [
+                "51bcb547ae139be1"
+            ]
+        ]
+    },
+    {
+        "id": "f54e7526db62a7d5",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sensor cuaca (0 - 5)",
+        "low": "0",
+        "high": "5",
+        "inte": "true",
+        "property": "payload",
+        "x": 920,
+        "y": 1380,
+        "wires": [
+            [
+                "01a4254ca4e7e978"
+            ]
+        ]
+    },
+    {
+        "id": "7b2c53510e650a1b",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sensor oksigen(0 - 100, %)",
+        "low": "0",
+        "high": "100",
+        "inte": "true",
+        "property": "payload",
+        "x": 940,
+        "y": 1680,
+        "wires": [
+            [
+                "6a56d2b98c55aded"
+            ]
+        ]
+    },
+    {
+        "id": "90dbb22aab92f0e2",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sensor proksimitas (m, 0 - 10)",
+        "low": "0",
+        "high": "10",
+        "inte": "true",
+        "property": "payload",
+        "x": 910,
+        "y": 100,
+        "wires": [
+            [
+                "3a7df85e34e52345"
+            ]
+        ]
+    },
+    {
+        "id": "36012f01af54f407",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sensor suara (20 - 150, dB)",
+        "low": "20",
+        "high": "150",
+        "inte": "true",
+        "property": "payload",
+        "x": 940,
+        "y": 1640,
+        "wires": [
+            [
+                "91a785b45680b987"
+            ]
+        ]
+    },
+    {
+        "id": "ec25e8742f30afca",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/temp4",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1200,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "d5e5a5061c718ec5",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/temp4",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1440,
+        "y": 280,
+        "wires": [
+            [
+                "6a47faab82053b9c",
+                "ce6bcfc142799460"
+            ]
+        ]
+    },
+    {
+        "id": "6a47faab82053b9c",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 15",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "6cb0b7765ac5b317",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/temp5",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1200,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "ac2f164c0563460c",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/temp6",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1200,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "47e28f1907691da9",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/temp5",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1440,
+        "y": 320,
+        "wires": [
+            [
+                "a589d45761e8f1ee",
+                "4303a14c9438273c"
+            ]
+        ]
+    },
+    {
+        "id": "a589d45761e8f1ee",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 16",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "484bf5a9c1b805f7",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/temp6",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1440,
+        "y": 360,
+        "wires": [
+            [
+                "c104629e9d647755",
+                "b4021e6dc203ac07"
+            ]
+        ]
+    },
+    {
+        "id": "c104629e9d647755",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 17",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "ce6bcfc142799460",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "630c7c7b639b2895",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor  1: Sensor suhu (C, 0 - 100))",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1680,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "4303a14c9438273c",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "630c7c7b639b2895",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor  2: Accelerometer sensor (cm/s, 5 - 200)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "5",
+        "max": "200",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1720,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "b4021e6dc203ac07",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "630c7c7b639b2895",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor 3: Angular sensor (rad/s, 0 - 50)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1700,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "3763770bbb43521d",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/temp7",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1200,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "cfaf2fae662c72c8",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/temp7",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1440,
+        "y": 440,
+        "wires": [
+            [
+                "8e5fdda2f764fbc0",
+                "4f8f29d5e82bc603"
+            ]
+        ]
+    },
+    {
+        "id": "8e5fdda2f764fbc0",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 18",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "16945b5e7127e2fa",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/temp8",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1200,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "68e16dc1f0ef5664",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/temp9",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1200,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "77aa5f7a65cedaa7",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/temp8",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1440,
+        "y": 480,
+        "wires": [
+            [
+                "b9bd594adbf25fda",
+                "808a2a7904e50cb5"
+            ]
+        ]
+    },
+    {
+        "id": "b9bd594adbf25fda",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 19",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "91ef6f009486a5a6",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/temp9",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1440,
+        "y": 520,
+        "wires": [
+            [
+                "77542ce46e49f86a",
+                "bb78c628a12bb80d"
+            ]
+        ]
+    },
+    {
+        "id": "77542ce46e49f86a",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 20",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "4f8f29d5e82bc603",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "7e73e73e8d6c84c5",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor 1: Pressure sensor (P, 1000 - 100000)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "1000",
+        "max": "100000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1720,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "808a2a7904e50cb5",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "7e73e73e8d6c84c5",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor  2: Magnetik sensor (mT, 0.005 - 1)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "5",
+        "max": "200",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1700,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "bb78c628a12bb80d",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "7e73e73e8d6c84c5",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor  3: Infrared sensor (W/m2, 0 - 1500)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "1500",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1710,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "c33e66aa771b1bcb",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/frik4",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1200,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "63edad8883685e4f",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/frik4",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1430,
+        "y": 780,
+        "wires": [
+            [
+                "0a64903a47615967",
+                "ac6c13e9423a5534"
+            ]
+        ]
+    },
+    {
+        "id": "0a64903a47615967",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 21",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "5425714775b875f7",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/frik5",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1200,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "85c4ba2154a2c196",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/frik6",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1200,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "7e4fccf4951999d8",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/frik5",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1430,
+        "y": 820,
+        "wires": [
+            [
+                "1621aedbe205350c",
+                "775ff996bb3889f3"
+            ]
+        ]
+    },
+    {
+        "id": "1621aedbe205350c",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 22",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "8ded8a0cf9a6e078",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/frik6",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1430,
+        "y": 860,
+        "wires": [
+            [
+                "08f98e699f7440b6",
+                "8e656113a1af5c3b"
+            ]
+        ]
+    },
+    {
+        "id": "08f98e699f7440b6",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 23",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "ac6c13e9423a5534",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "6fc054b6f8394d2c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor 4: Motion sensor (0 - 1)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "1",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1650,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "775ff996bb3889f3",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "6fc054b6f8394d2c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor 5: Tilt sensor (0 - 360, derajat)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "360",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1690,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "8e656113a1af5c3b",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "6fc054b6f8394d2c",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor 6: Sensor gaya (0, 10000, N)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "10000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1670,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "dc1e61188ed2feac",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/frik7",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1200,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "a3f087d97422773c",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/frik7",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1430,
+        "y": 940,
+        "wires": [
+            [
+                "1ac28f6846e4879e",
+                "e67018307d4a122f"
+            ]
+        ]
+    },
+    {
+        "id": "1ac28f6846e4879e",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 24",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "51b74e379bb52b08",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/frik8",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1200,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "000e0cf5970d2df0",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/frik9",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1200,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "67bf4f479d4b3387",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/frik8",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1430,
+        "y": 980,
+        "wires": [
+            [
+                "c23a294eed35365e",
+                "37c33917f6a3db94"
+            ]
+        ]
+    },
+    {
+        "id": "c23a294eed35365e",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 25",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "7eb6a6008c5c3dd6",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/frik9",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1430,
+        "y": 1020,
+        "wires": [
+            [
+                "c69a2b7b708ae666",
+                "fe69920c3c2bcba6"
+            ]
+        ]
+    },
+    {
+        "id": "c69a2b7b708ae666",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 26",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "e67018307d4a122f",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "a5fa86670b910c43",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor 4: Sensor aliran(20 - 30, ft/s)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "20",
+        "max": "30",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1670,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "37c33917f6a3db94",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "a5fa86670b910c43",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor 5: Sensor kelembaban(0 - 100, %)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1700,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "fe69920c3c2bcba6",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "a5fa86670b910c43",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor 6: Sensor massa(0 - 250, kg)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "250",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1670,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "7ab47b8cabcf9922",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/dl6",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1190,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "2fa422736291e29c",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/dl4",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1430,
+        "y": 1380,
+        "wires": [
+            [
+                "a24654f9f3aa112a",
+                "0b131ac1adb8a989"
+            ]
+        ]
+    },
+    {
+        "id": "a24654f9f3aa112a",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 27",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "923a1ff3b5c0ddd9",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/dl5",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1190,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "01a4254ca4e7e978",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/dl4",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1190,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "07928cac24b7ae86",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/dl5",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1430,
+        "y": 1420,
+        "wires": [
+            [
+                "4c06c67f69c5e366",
+                "e55ffd8e4b55cef6"
+            ]
+        ]
+    },
+    {
+        "id": "4c06c67f69c5e366",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 28",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "812a8b946501e350",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/dl6",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1430,
+        "y": 1460,
+        "wires": [
+            [
+                "620c4f27b4ffddfe",
+                "954e1571d17de651"
+            ]
+        ]
+    },
+    {
+        "id": "620c4f27b4ffddfe",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 29",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "0b131ac1adb8a989",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "f905900e9d0853e9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor 7: Sensor cuaca (0 - 5)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "5",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1650,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "e55ffd8e4b55cef6",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "e84211c10641977c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor 8: Sensor vibrasi (0 - 100, a/s)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1670,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "954e1571d17de651",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "e84211c10641977c",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor 9: Sensor magnetik (0 - 100, tesla)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "200",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1680,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "6a56d2b98c55aded",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/dl9",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1190,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "f610b74ded551c84",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/dl7",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1430,
+        "y": 1600,
+        "wires": [
+            [
+                "5f220f1679b79cce",
+                "6a585b4cca2f0bb4"
+            ]
+        ]
+    },
+    {
+        "id": "5f220f1679b79cce",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 30",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "91a785b45680b987",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/dl8",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1190,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "51bcb547ae139be1",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/dl7",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 1190,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "8e9980f378bbe3a6",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/dl8",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1430,
+        "y": 1640,
+        "wires": [
+            [
+                "c5557970cce665b1",
+                "71672c0a40851037"
+            ]
+        ]
+    },
+    {
+        "id": "c5557970cce665b1",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 31",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "7af2128b2aa08e80",
+        "type": "mqtt in",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/dl9",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "727660ac399984c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1430,
+        "y": 1680,
+        "wires": [
+            [
+                "ec7a706402c5f836",
+                "6d88a62c92280ae4"
+            ]
+        ]
+    },
+    {
+        "id": "ec7a706402c5f836",
+        "type": "debug",
+        "z": "2cfa32f2d11b78fe",
+        "name": "debug 32",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "6a585b4cca2f0bb4",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "f64300a8f077d042",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor 7: Sensor radiasi (100 - 1000, gray)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "100",
+        "max": "1000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1690,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "71672c0a40851037",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "f64300a8f077d042",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor 8:Sensor suara (20 - 150, dB)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "20",
+        "max": "150",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1670,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "6d88a62c92280ae4",
+        "type": "ui_gauge",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "group": "f64300a8f077d042",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor 9: Sensor oksigen(0 - 100, %)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1670,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "a06d755e91cddd6e",
+        "type": "comment",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Infrared (W/m2) Solar irradiance: https://www.comptus.com/how-solar-radiation-sensors-work/#:~:text=The%20sensor%20is%20designed%20to,to%201500%20W%2FM%202.",
+        "info": "",
+        "x": 670,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "94485f03fde93ede",
+        "type": "comment",
+        "z": "2cfa32f2d11b78fe",
+        "name": "flow (ft/s) https://www.emerson.com/documents/automation/technical-note-rosemount-dp-flowmeter-rangeability-en-87216.pdf",
+        "info": "",
+        "x": 520,
+        "y": 1980,
+        "wires": []
+    },
+    {
+        "id": "8bcb89e6212bbfe5",
+        "type": "comment",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Kualitas udara (ppm) https://ionscience.com/en/products/minipid-2-ppm-wide-range-gas-sensor/#:~:text=PPM%20Wide%20Range%20sensor%20%2D%20with%20a%20detection%20range%20of%2010%2C000%20ppm",
+        "info": "",
+        "x": 810,
+        "y": 2020,
+        "wires": []
+    },
+    {
+        "id": "65129ff37f1d0904",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/akt1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 540,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "5691acd1dd2bfa2e",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/akt2",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 540,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "12d431edbab777c6",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/akt3",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 540,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "ef32109c8254edea",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/akt4",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 540,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "436341caf2865128",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/akt5",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 540,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "2b8db367816edb36",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/akt6",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 540,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "424c09e8a2bfbc30",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/akt7",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 540,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "7dafc6713e6c95ee",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/akt8",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 540,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "105e1dd85a1f6127",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/akt9",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 540,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "738f310eb5615209",
+        "type": "comment",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sensor kecepatan udara: https://www.tokopedia.com/mri/sensor-kecepatan-angin-anemometer-analog-adc-output",
+        "info": "",
+        "x": 480,
+        "y": 2060,
+        "wires": []
+    },
+    {
+        "id": "0aa02207230badbe",
+        "type": "comment",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sensor tegangan: https://www.tokopedia.com/mechatron/pzem-004t-sensor-watt-volt-current-power-tegangan-arus-meter-ac-100v-openct-case?extParam=ivf%3Dfalse&src=topads",
+        "info": "",
+        "x": 690,
+        "y": 2100,
+        "wires": []
+    },
+    {
+        "id": "b2a273bba93fafe8",
+        "type": "comment",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sensor arus: https://www.tokopedia.com/rdd-tech/arduino-current-transducer-sensor-arus-ac",
+        "info": "",
+        "x": 420,
+        "y": 2140,
+        "wires": []
+    },
+    {
+        "id": "dc5d411277daea9f",
+        "type": "comment",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Sensor warna: https://www.tokopedia.com/cncstorebandung/tcs3200-color-sensor-recognition-detector-module-sensor-warna-tcs3200?extParam=ivf%3Dfalse%26src%3Dsearch",
+        "info": "",
+        "x": 680,
+        "y": 2180,
+        "wires": []
+    },
+    {
+        "id": "9bb3321b5cae995d",
+        "type": "random",
+        "z": "2cfa32f2d11b78fe",
+        "name": "Aktuator: rating perusahaan (%, 0-100)",
+        "low": "0",
+        "high": "100",
+        "inte": "true",
+        "property": "payload",
+        "x": 450,
+        "y": 1760,
+        "wires": [
+            [
+                "acb7d6fbc01cf45f",
+                "7ce76367441d6a6f",
+                "ad764475ab35ffa0",
+                "50ab64471dfdb12b"
+            ]
+        ]
+    },
+    {
+        "id": "acb7d6fbc01cf45f",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/akt10",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 720,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "7ce76367441d6a6f",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/akt11",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 720,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "ad764475ab35ffa0",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/akt12",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 720,
+        "y": 1800,
+        "wires": []
+    },
+    {
+        "id": "50ab64471dfdb12b",
+        "type": "mqtt out",
+        "z": "2cfa32f2d11b78fe",
+        "name": "",
+        "topic": "uts/akt13",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "727660ac399984c1",
+        "x": 720,
+        "y": 1840,
+        "wires": []
+    }
+]

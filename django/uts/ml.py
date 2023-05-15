@@ -24,9 +24,9 @@ def machine_learning():
     df_dl3 = df[df.name == 'dl3']
 
     df_akt = df[df.name == 'aktuator']
-    df_akt1 = df[df.name == 'aktuator1']
-    df_akt2 = df[df.name == 'aktuator2']
-    df_akt3 = df[df.name == 'aktuator3']
+    df_akt1 = df[df.name == 'aktuator1_1']
+    df_akt2 = df[df.name == 'aktuator1_2']
+    df_akt3 = df[df.name == 'aktuator1_3']
 
     # Verify that result of SQL query is stored in the dataframe
     #print(df.head())
@@ -48,9 +48,10 @@ def machine_learning():
     akt2 = df_akt2['value'].values
     akt3 = df_akt3['value'].values
 
+    print(temp1)
     df_new = pd.DataFrame(list(zip(temp1, temp2, temp3, frik1, frik2, frik3, dl1, dl2, dl3, akt, akt1, akt2, akt3)),
                 columns =['Gas', 'Suhu', 'PH', 'Volume', 'Berat', 'Kelembaban', 'Musim', 'Sales', 'Jumlah_pengunjung', 'Aktuator', 'aktuator1', 'aktuator2', 'aktuator3'])
-
+    print(df_new)
     X1 = df_new[['Gas', 'Suhu', 'PH']]
     y1 = df_new['aktuator1']
 
@@ -60,6 +61,7 @@ def machine_learning():
     X3 = df_new[['Musim', 'Sales', 'Jumlah_pengunjung']]
     y3 = df_new['aktuator3']
 
+    print(X1, y1)
     regr1 = linear_model.LinearRegression()
     regr1.fit(X1, y1)
 
@@ -109,8 +111,8 @@ def machine_learning():
     c = [int(i) for i in a]
 
     predicted_akt1 = regr1.predict([[c[0], c[1], c[2]]])
-    predicted_akt2 = regr1.predict([[c[3], c[4], c[5]]])
-    predicted_akt3 = regr1.predict([[c[6], c[7], c[8]]])
+    predicted_akt2 = regr2.predict([[c[3], c[4], c[5]]])
+    predicted_akt3 = regr3.predict([[c[6], c[7], c[8]]])
     # df_akt = pd.DataFrame(list(zip(predicted_akt1, predicted_akt2, predicted_akt3)),
     #             columns =['aktuator1', 'aktuator2', 'aktuator3'])
     
